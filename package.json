@@ -12,7 +12,8 @@
   },
   "module": "./lib/index.js",
   "files": [
-    "./lib"
+    "./lib",
+    "auto.js"
   ],
   "scripts": {
     "dev": "taro build --type weapp --watch",
