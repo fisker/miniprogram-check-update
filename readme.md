@@ -10,7 +10,13 @@ yarn add mini-program-update@http://221.130.48.66:30013/zhang.haifeng/mini-progr
 
 ## Usage
 
-### Use as a page
+### Auto mode (recommended)
+
+```js
+import 'mini-program-update/auto'
+```
+
+### Manually call the update
 
 ```js
 import checkUpdate from 'mini-program-update'
