@@ -1,0 +1,49 @@
+{
+  "name": "mini-program-update",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "http://221.130.48.66:30013/zhang.haifeng/mini-program-update",
+  "license": "MIT",
+  "author": "fisker Cheung <lionkay@gmail.com>",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "module": "./lib/index.js",
+  "files": [
+    "./lib"
+  ],
+  "scripts": {
+    "dev": "taro build --type weapp --watch",
+    "format": "run-p format:*",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:package-json": "sort-package-json \"package.json\" \"packages/*/package.json\"",
+    "format:prettier": "yarn lint:prettier --write",
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint \"**/*.{js,mjs,cjs,vue}\"",
+    "lint:package-json": "yarn run format:package-json --check",
+    "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/runtime": "7.15.3",
+    "@fisker/eslint-config-vue": "7.1.5",
+    "@fisker/husky-config": "4.1.0",
+    "@fisker/lint-staged-config": "3.1.0",
+    "@fisker/prettier-config": "4.1.1",
+    "@tarojs/components": "3.3.2",
+    "@tarojs/mini-runner": "3.3.2",
+    "@tarojs/runtime": "3.3.2",
+    "@tarojs/taro": "3.3.2",
+    "@tarojs/webpack-runner": "3.3.2",
+    "@types/webpack-env": "1.16.2",
+    "@vue/compiler-sfc": "3.2.2",
+    "babel-preset-taro": "3.3.2",
+    "eslint": "7.32.0",
+    "husky": "7.0.1",
+    "lint-staged": "11.1.2",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.3.2",
+    "sort-package-json": "1.50.0",
+    "vue": "3.2.2",
+    "vue-loader": "16.5.0"
+  }
+}
