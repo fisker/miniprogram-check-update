@@ -1,8 +1,8 @@
 {
-  "name": "mini-program-update",
+  "name": "mini-program-check-update",
   "version": "1.0.0",
   "private": true,
-  "repository": "http://221.130.48.66:30013/zhang.haifeng/mini-program-update",
+  "repository": "http://221.130.48.66:30013/zhang.haifeng/mini-program-check-update",
   "license": "MIT",
   "author": "fisker Cheung <lionkay@gmail.com>",
   "type": "module",
