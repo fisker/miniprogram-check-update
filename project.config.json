@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.1",
   "appid": "wx2e1ed1d9c650e8fd",
-  "projectname": "mini-program-check-update",
+  "projectname": "miniprogram-check-update",
   "debugOptions": {
     "hidedInDevtools": []
   },

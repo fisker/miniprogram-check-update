@@ -1,4 +1,4 @@
-# mini-program-check-update
+# miniprogram-check-update
 
 ## Installation
 
