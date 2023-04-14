@@ -1,1 +1,3 @@
-import './lib/auto.js'
+import checkUpdate from './index.js'
+
+checkUpdate()

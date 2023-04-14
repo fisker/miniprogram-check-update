@@ -1,18 +1,17 @@
 {
-  "name": "mini-program-check-update",
-  "version": "1.0.0",
-  "private": true,
-  "repository": "http://221.130.48.66:30013/zhang.haifeng/mini-program-check-update",
+  "name": "miniprogram-check-update",
+  "version": "0.0.0",
+  "repository": "fisker/miniprogram-check-update",
   "license": "MIT",
   "author": "fisker Cheung <lionkay@gmail.com>",
   "type": "module",
   "exports": {
-    ".": "./lib/index.js",
-    "./auto": "./lib/auto.js"
+    ".": "./index.js",
+    "./auto": "./auto.js"
   },
-  "module": "./lib/index.js",
+  "module": "./index.js",
   "files": [
-    "./lib",
+    "index.js",
     "auto.js"
   ],
   "scripts": {
@@ -27,27 +26,27 @@
     "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
-    "@babel/runtime": "7.15.3",
-    "@fisker/eslint-config-vue": "7.1.5",
-    "@fisker/husky-config": "4.1.0",
-    "@fisker/lint-staged-config": "3.1.0",
-    "@fisker/prettier-config": "4.1.1",
-    "@tarojs/components": "3.3.2",
-    "@tarojs/mini-runner": "3.3.2",
-    "@tarojs/runtime": "3.3.2",
-    "@tarojs/taro": "3.3.2",
-    "@tarojs/webpack-runner": "3.3.2",
-    "@types/webpack-env": "1.16.2",
-    "@vue/compiler-sfc": "3.2.2",
-    "babel-preset-taro": "3.3.2",
-    "eslint": "7.32.0",
-    "husky": "7.0.1",
-    "lint-staged": "11.1.2",
+    "@babel/core": "7.21.4",
+    "@babel/runtime": "7.21.0",
+    "@fisker/eslint-config-vue": "10.0.27",
+    "@fisker/husky-config": "4.1.3",
+    "@fisker/lint-staged-config": "3.1.6",
+    "@fisker/prettier-config": "5.0.7",
+    "@tarojs/components": "3.6.4",
+    "@tarojs/mini-runner": "3.6.4",
+    "@tarojs/runtime": "3.6.4",
+    "@tarojs/taro": "3.6.4",
+    "@tarojs/webpack-runner": "3.6.4",
+    "@types/webpack-env": "1.18.0",
+    "@vue/compiler-sfc": "3.2.47",
+    "babel-preset-taro": "3.6.4",
+    "eslint": "8.38.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.1",
     "npm-run-all": "4.1.5",
-    "prettier": "2.3.2",
-    "sort-package-json": "1.50.0",
-    "vue": "3.2.2",
-    "vue-loader": "16.5.0"
+    "prettier": "2.8.7",
+    "sort-package-json": "2.4.1",
+    "vue": "3.2.47",
+    "vue-loader": "17.0.1"
   }
 }

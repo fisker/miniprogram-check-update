@@ -2,10 +2,8 @@
 
 ## Installation
 
-Get latest commit hash from [the repository](http://221.130.48.66:30013/zhang.haifeng/mini-program-check-update/-/commits/master)
-
 ```bash
-yarn add mini-program-check-update@http://221.130.48.66:30013/zhang.haifeng/mini-program-check-update.git#THE_LATEST_COMMIT_HASH_HERE
+yarn add miniprogram-check-update
 ```
 
 ## Usage
@@ -13,13 +11,13 @@ yarn add mini-program-check-update@http://221.130.48.66:30013/zhang.haifeng/mini
 ### Auto mode (recommended)
 
 ```js
-import 'mini-program-check-update/auto'
+import 'miniprogram-check-update/auto'
 ```
 
 ### Manually call the update
 
 ```js
-import checkUpdate from 'mini-program-check-update'
+import checkUpdate from 'miniprogram-check-update'
 
 checkUpdate()
 ```
@@ -30,7 +28,7 @@ checkUpdate()
 
 #### `runtime`
 
-Object with `getUpdateManager()` method, `wx`, `tt`, or `Taro`, etc
+Object with `getUpdateManager()` method, `wx`, `tt`, `Taro`, `uni`, etc
 
 ```js
 checkUpdate({runtime: wx})

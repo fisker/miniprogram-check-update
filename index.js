@@ -1,21 +1,7 @@
-function getGlobalThis() {
-  if (typeof globalThis === 'object') {
-    return globalThis
-  }
-
-  if (typeof window === 'object') {
-    return window
-  }
-
-  // eslint-disable-next-line no-new-func
-  return new Function('return this')()
-}
-
 function getRuntime() {
-  const globalThis = getGlobalThis()
   for (const runtimeName of ['wx', 'tt', 'jd', 'qq', 'swan', 'my']) {
     const runtime = globalThis[runtimeName]
-    if (runtime && typeof runtime.getSystemInfo === 'function') {
+    if (typeof runtime?.getUpdateManager === 'function') {
       return runtime
     }
   }
@@ -32,7 +18,9 @@ function checkUpdate(options) {
   }
 
   const updateManager = runtime.getUpdateManager()
-  const install = () => updateManager.applyUpdate()
+  const install = () => {
+    updateManager.applyUpdate()
+  }
 
   if (onCheckForUpdate) {
     updateManager.onCheckForUpdate(({hasUpdate}) => {
@@ -47,6 +35,7 @@ function checkUpdate(options) {
   if (onUpdateFailed) {
     updateManager.onUpdateFailed(onUpdateFailed)
   }
+
   updateManager.onUpdateReady(() => {
     if (onUpdateReady) {
       onUpdateReady(install)

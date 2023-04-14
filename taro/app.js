@@ -1,4 +1,4 @@
 import {createApp} from 'vue'
-import '../lib/auto.js'
+import '../auto.js'
 
 export default createApp({})
